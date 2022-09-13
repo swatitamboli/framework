@@ -22,7 +22,10 @@ public class HomePage {
 	
 	By pageHeader = By.xpath("//h6[text()='PIM']");
 	By leaveButton=By.xpath("//a[@href='/web/index.php/leave/viewLeaveModule']");
-	
+	By adminButton=By.xpath("//span[text()='Admin']");
+	By timeButton=By.xpath("//sapn[text()='Time']");
+	By dashboradButton=By.xpath("//span[text()='Dashboard']");
+			
 	public HomePage(WebDriver driver)
 	{
 		this.driver=driver;
@@ -70,5 +73,9 @@ public class HomePage {
 		driver.findElement(leaveButton).click();
 		return new LeavePage(driver);
 	}
-	
+	public AdminPage ClickOnAdminButton()
+	{
+		driver.findElement(adminButton).click();
+		return new AdminPage(driver);
+	}
 }
