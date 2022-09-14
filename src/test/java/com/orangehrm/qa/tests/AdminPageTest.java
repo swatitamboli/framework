@@ -19,9 +19,9 @@ public void before()
  adminPage=homepage.ClickOnAdminButton();
 }
 @Test
-public void vrifyUserName() 
+public void vrifySystemUserName() 
 {
-	boolean actual=adminPage.getUsername();
+	boolean actual=adminPage.getSystemUsername();
 	Assert.assertEquals(actual,true);
 
 }

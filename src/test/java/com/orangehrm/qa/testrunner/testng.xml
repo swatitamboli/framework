@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Suite" parallel="tests" thread-count="4">
+<suite name="Suite" >
 <listeners>
 <listener class-name="com.orangehrm.qa.listeners.TestNGListener"></listener>
 <listener class-name="com.orangehrm.qa.listeners.ExtentReportListener"></listener>
@@ -20,10 +20,16 @@
       <class name="com.orangehrm.qa.tests.ResetPasswordPageTest"/>
     </classes>
   </test>
+  
   <test thread-count="5" name="LeavePageTest">
     <classes>
       <class name="com.orangehrm.qa.tests.LeavePageTest"/>
     </classes>
+  </test>
+  <test thread-count="5" name="AdminPageTest">
+  <classes>
+  <class name="com.orangehrm.qa.tests.AdminPageTest"/>
+  </classes>
   </test>
    <!-- Test -->
 </suite> <!-- Suite -->
