@@ -31,5 +31,10 @@
   <class name="com.orangehrm.qa.tests.AdminPageTest"/>
   </classes>
   </test>
+  <test thread-count="5" name="TimePageTest">
+  <classes>
+  <class name="com.orangehrm.qa.tests.TimePageTest"/>
+  </classes>
+  </test>
    <!-- Test -->
 </suite> <!-- Suite -->
